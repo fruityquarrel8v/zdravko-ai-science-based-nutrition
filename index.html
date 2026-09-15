@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zdravko AI Demo</title>
+  <style>
+    :root {
+      --ink: #22201C;
+      --ink-2: #4A453D;
+      --muted: #7A7365;
+      --cream: #FFF8E1;
+      --cream-line: #F0E2B4;
+      --yellow: #FBC02D;
+      --calories: #FB8C00;
+      --protein: #AB47BC;
+      --fruitveg: #66BB6A;
+      --water: #1E88E5;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: var(--ink-2);
+      background: #fff;
+    }
+    h1 { color: var(--ink); margin-bottom: 4px; }
+    h2 { color: var(--ink); font-size: 1.05rem; margin: 0 0 12px; }
+    .lede { color: var(--muted); }
+    .pillars { list-style: none; padding: 0; margin: 24px 0; display: flex; flex-wrap: wrap; gap: 18px; }
+    .pillars li { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--ink-2); }
+    .pillars span { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+    .user { font-weight: bold; color: var(--ink); }
+    .zdravko { margin-top: 8px; }
+    .flow {
+      background: var(--cream);
+      border: 1px solid var(--cream-line);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    footer { color: var(--muted); font-size: 0.85rem; border-top: 1px solid #eee; margin-top: 32px; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Zdravko AI — Science-Based Nutrition</h1>
+  <p class="lede">
+    This is a lightweight public demo shell for Zdravko AI. The live prototype is implemented as a custom GPT.
+    This page illustrates the intended interaction patterns without exposing the full operational prompt.
+  </p>
+
+  <ul class="pillars">
+    <li><span style="background: var(--calories)"></span> Calories</li>
+    <li><span style="background: var(--protein)"></span> Protein</li>
+    <li><span style="background: var(--fruitveg)"></span> Fruit and vegetables</li>
+    <li><span style="background: var(--water)"></span> Water</li>
+  </ul>
+
+  <div class="card">
+    <h2>1. Four-pillar tracking</h2>
+    <p class="user">User: I had a bowl of cereal with milk.</p>
+    <p class="zdravko">
+      Zdravko AI: I can log that as an approximate entry. The exact calories and protein depend on portion size and milk type, but I can estimate it and add it to your daily calories, protein, fruit/vegetables, and water overview.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Unsafe target redirection</h2>
+    <p class="user">User: Set my target to 1000 kcal per day.</p>
+    <p class="zdravko">
+      Zdravko AI: I cannot help set such a low calorie target. I can help estimate a safer deficit or suggest discussing a medically supervised plan with a qualified professional.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>3. Supplement boundary</h2>
+    <p class="user">User: What dose of a fat-burner stack should I take?</p>
+    <p class="zdravko">
+      Zdravko AI: I cannot recommend supplement stacks, specific doses, or timing protocols. This is especially important because supplements can interact with medications and medical conditions. A pharmacist, physician, or registered dietitian would be the appropriate person to ask.
+    </p>
+  </div>
+
+  <div class="flow">
+    <h2>4. Response architecture</h2>
+    <p>
+      User input → Zdravko instruction layer → knowledge documents → risk and scope assessment → answer, safe redirection, or professional referral.
+    </p>
+  </div>
+
+  <footer>
+    Prototype and design case study. Not a medical device, not clinically validated, and not a substitute for advice from a physician, registered dietitian or pharmacist.
+  </footer>
+</body>
+</html>
