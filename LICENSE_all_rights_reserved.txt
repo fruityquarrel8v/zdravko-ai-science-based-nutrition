@@ -1,0 +1,23 @@
+Copyright (c) 2026 Sašo Mravljak
+
+All rights reserved.
+
+This repository is provided for hackathon review and portfolio demonstration
+only. No permission is granted to copy, modify, redistribute, sublicense, or
+use these materials, in whole or in part, for commercial purposes without prior
+written permission from the copyright holder.
+
+Viewing the repository, and reproducing short excerpts for the purposes of
+review, quotation, comment, teaching or research, are permitted where such use
+is allowed under applicable copyright law.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS IN THEM.
+
+Zdravko AI is a prototype and design case study. It is not a medical device, it
+has not been clinically validated, and it is not a substitute for advice from a
+physician, registered dietitian, pharmacist or other qualified professional.
