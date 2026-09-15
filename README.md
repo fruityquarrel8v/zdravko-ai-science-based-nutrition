@@ -78,65 +78,40 @@ Response type
 
 The response type is selected based on whether the request is low-risk, ambiguous, unsafe, clinical, urgent, or outside the safe scope of a conversational nutrition assistant.
 
-A visual version of this flow is included in [`docs/architecture.png`](docs/architecture.png).
+![Zdravko AI architecture](architecture.png)
 
-A written explanation is included in [`docs/architecture.md`](docs/architecture.md).
-
-![Zdravko AI architecture](docs/architecture.png)
+A written explanation is in [`architecture.md`](architecture.md).
 
 ## Repository contents
 
-This repository currently contains:
+| File | What it is |
+|---|---|
+| [`architecture.md`](architecture.md) | The system structure and response flow, explained in full. |
+| [`architecture.png`](architecture.png) | Visual architecture diagram. |
+| [`four_pillar_model.md`](four_pillar_model.md) | The simplified four-pillar tracking model: calories, protein, fruit and vegetables, and water. |
+| [`safeguard_overview.md`](safeguard_overview.md) | The main safeguard categories, including unsafe restriction, medical boundaries, supplement questions, allergies, false precision, incomplete logs, and adversarial pressure. |
+| [`public_prompt_excerpt.md`](public_prompt_excerpt.md) | A sanitized public excerpt of the prompt principles. It does not contain the full operational prompt. |
+| [`index.html`](index.html) | A lightweight public demo shell illustrating example interaction patterns. |
+| `Zdravko_AI_Showcase_Conversation_page-0001.jpg` … `-0006.jpg` | Six screenshots of a full example conversation. See below. |
 
-```text
-README.md
-LICENSE
-docs/
-  architecture.md
-  architecture.png
-  four_pillar_model.md
-  safeguard_overview.md
-prompts/
-  public_prompt_excerpt.md
-demo/
-  index.html
-screenshots/
-  01_onboarding.jpg
-  02_personal_targets.jpg
-  03_meal_logging.jpg
-  04_daily_summary.jpg
-  05_safety_boundary.jpg
-  06_professional_boundary.jpg
-```
+## Showcase screenshots
 
-## Key files
+The six screenshots are consecutive pages of one continuous conversation with the live prototype, in order:
 
-**[`docs/architecture.md`](docs/architecture.md)**
-Explains the system structure and response flow.
-
-**[`docs/architecture.png`](docs/architecture.png)**
-Visual architecture diagram for the project.
-
-**[`docs/four_pillar_model.md`](docs/four_pillar_model.md)**
-Explains the simplified four-pillar tracking model: calories, protein, fruit and vegetables, and water.
-
-**[`docs/safeguard_overview.md`](docs/safeguard_overview.md)**
-Summarizes the main safeguard categories, including unsafe restriction, medical boundaries, supplement questions, allergies, false precision, incomplete logs, and adversarial pressure.
-
-**[`prompts/public_prompt_excerpt.md`](prompts/public_prompt_excerpt.md)**
-Provides a sanitized public excerpt of the prompt principles. It does not contain the full operational prompt.
-
-**[`demo/index.html`](demo/index.html)**
-A lightweight public demo shell illustrating example interaction patterns.
-
-**Showcase screenshots**
-Six screenshots showing example Zdravko AI interactions: onboarding, personalized targets, meal logging, the daily summary, an unsafe target declined, and a professional referral.
+| File | What it shows |
+|---|---|
+| [`page-0001`](Zdravko_AI_Showcase_Conversation_page-0001.jpg) | Onboarding, the first-use disclaimer, and the information the assistant asks for before giving any targets. |
+| [`page-0002`](Zdravko_AI_Showcase_Conversation_page-0002.jpg) | BMI interpretation, a tailored goal shortlist, and the resulting personalized daily targets. |
+| [`page-0003`](Zdravko_AI_Showcase_Conversation_page-0003.jpg) | Logging a meal from vague conversational input, with the estimate labelled as approximate and a running total kept. |
+| [`page-0004`](Zdravko_AI_Showcase_Conversation_page-0004.jpg) | The end-of-day summary across the four pillars, with the shortfall named rather than moralised. |
+| [`page-0005`](Zdravko_AI_Showcase_Conversation_page-0005.jpg) | Where the targets come from, and an unsafe calorie target declined and redirected to a safer alternative. |
+| [`page-0006`](Zdravko_AI_Showcase_Conversation_page-0006.jpg) | Compensatory fasting declined, with a referral to an appropriate professional. |
 
 ## Demo
 
 The live prototype is implemented as a custom GPT.
 
-The [`demo/index.html`](demo/index.html) file in this repository is not the full AI system. It is a lightweight public demo shell that illustrates intended interaction patterns without exposing the full operational prompt.
+The [`index.html`](index.html) file in this repository is not the full AI system. It is a lightweight public demo shell that illustrates intended interaction patterns without exposing the full operational prompt.
 
 ## Limitations
 
